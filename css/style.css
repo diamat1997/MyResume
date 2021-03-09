@@ -1,0 +1,371 @@
+html{
+box-sizing: border-box;
+}
+*, ::before{
+    box-sizing: inherit;
+}
+
+.container{
+    display: flex;
+    max-width: 960px;
+    background-color: #e9e9e9;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.profile{
+    flex-basis: 35%;
+    background-color: #3b3b3c;
+}
+
+.profile-foto{
+    height: 235px;
+    /* width: 350px; */
+    /* заменить фото */
+    background-image: url(/img/Заглушка.jpg);
+    background-size: cover;
+    /* background-position: top; */
+    background-repeat: no-repeat;
+}
+
+.profile-info{
+    padding: 50px 30px 70px 30px;
+}
+
+.heading{
+    margin: 0;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.heading-profile{
+    border-bottom: 2px #5b5b5c dashed;
+    color: #fff
+}
+
+.profile-text{
+    line-height: 25px;
+    font-size: 13px;
+    color: #767676;
+    margin-bottom: 50px;
+}
+
+.contacts{
+    margin-bottom: 70px;
+}
+
+.contact-titel{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact-titel i{
+    padding-right: 10px;
+}
+
+.contacts-text{
+    color: #8c8c8c;
+    text-decoration: none;
+    padding-left: 30px;
+    line-height: 21px;
+}
+
+.contacts-item{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 2px #5b5b5c dashed;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+address{
+    font-style: normal;
+}
+
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language{
+    height: 100px;
+    width: 100px;
+    border: 6px solid #5b5b5c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.language:nth-child(3){
+    margin-bottom: 0;
+}
+
+.language-text{
+    text-transform: uppercase;
+    color: #5b5b5c;
+    font-size: 11px;
+}
+
+.language-persent{
+    font-size: 15px;
+    color: #fff;
+}
+
+.lines{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line{
+    border: none;
+    width: 90px;
+    height: 2px;
+    background: #5b5b5c;
+}
+
+.line:nth-child(2){
+    width: 110px;
+    margin-left: 40px;
+}
+
+/* правая часть */
+
+.resume{
+    padding: 25px 30px;
+    flex-basis: 63%;
+    background-color: #fff;
+}
+
+.resume-wrap{
+    border: 1px solid #e8e8e8;
+    padding: 36px 56px;
+    height: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-img{
+    height: 90px;
+    width: 90px;
+    border: 1px solid #a9a9a9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-lines{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-line{
+    border: none;
+    width: 42px;
+    height: 2px;
+    background-color: #484849;
+}
+
+.right .logo-line:nth-child(2){
+    margin-left: 30px;
+    width: 55px;
+}
+
+.left .logo-line:nth-child(2){
+    margin-right: 30px;
+    width: 55px;
+}
+
+.about{
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.name{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.work{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #b1b1b1;
+    margin-bottom: 20px;
+}
+
+.about-contacts{
+    font-size: 8px;
+}
+
+.about-contacts a{
+    text-decoration: none;
+    color: #777;
+}
+
+.about-address{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.heading-resume{
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 37px;
+}
+
+.list{
+    list-style: none;
+}
+
+.list-item{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #f2f2f2;
+}
+
+.list-item::before{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #3b3b3c;
+}
+
+.item-title{
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.item-data{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.item-text{
+    font-size: 11px;
+    color: #767676;
+}
+
+.last-item{
+    border: none;
+}
+
+.heading-skils{
+    margin: 50px 0;
+}
+
+.skils-list{
+    list-style: none;
+    padding-left: 0; 
+}
+
+.skils-item{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progres{
+    height: 10px;
+    width: 70%;
+    border: 1px solid #888888;
+    position: relative;
+}
+
+.p90{
+    height: 100%;
+    width: 90%;
+    background-color: #888888;
+}
+
+.p80{
+    height: 100%;
+    width: 80%;
+    background-color: #888888;
+}
+
+.p50{
+    height: 100%;
+    width: 50%;
+    background-color: #888888;
+}
+
+.p40{
+    height: 100%;
+    width: 40%;
+    background-color: #888888;
+}
+
+@media (max-width:1024px){
+    .container{
+        flex-direction: column;
+        width: 90%;
+    }
+    .profile{
+        flex-basis: 100%;
+    }
+    .profile-foto{
+        width: 100%;
+        height: 500px;
+        /* пофиксить висоту */
+    }
+
+    .heading{
+        text-align: center;
+    }
+
+    .contacts-item{
+        text-align: center;
+
+    }
+
+    .lines{
+        display: none;
+    }
+
+    .list{
+        padding-inline-start: 0;
+    }
+
+    .list-item{
+        padding-left: 0;
+    }
+
+    .list-item::before{
+        display: none;
+    }
+}
+
+@media (max-width:567px){
+    .logo-lines{
+        display: none; 
+    }
+
+    .name{
+        letter-spacing: normal;
+    }
+}
